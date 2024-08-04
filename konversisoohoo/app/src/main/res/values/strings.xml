@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">konversi soohoo</string>
+    <string-array name="pilihan">
+        <item>celcius to reamur</item>
+        <item>celcius to farenheit</item>
+        <item>celcius to kelvin</item>
+        <item>reamur to celcius</item>
+        <item>reamur to farenheit</item>
+
+    </string-array>
+</resources>
