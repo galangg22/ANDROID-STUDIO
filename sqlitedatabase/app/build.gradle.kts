@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace = "com.zakky.sqlitedatabase"
+    namespace = "com.galang.sqlitedatabase"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.zakky.sqlitedatabase"
+        applicationId = "com.galang.sqlitedatabase"
         minSdk = 28
         targetSdk = 34
         versionCode = 1

@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
             return insets;
 
 
-        });
+        }); 
 
     }
     public void showToast(String pesan) {
