@@ -1,11 +1,13 @@
 package com.galang.recycleview;
 
+
 public class Siswa {
 
-    private String nama;
+    private  String nama;
     private String alamat;
 
-    public Siswa(String nama, String alamat) {
+    public Siswa(String nama, String alamat)
+    {
         this.nama = nama;
         this.alamat = alamat;
     }
@@ -26,3 +28,4 @@ public class Siswa {
         this.alamat = alamat;
     }
 }
+

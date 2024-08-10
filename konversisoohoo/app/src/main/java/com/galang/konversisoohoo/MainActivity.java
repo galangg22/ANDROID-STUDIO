@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
 //        spinner.setAdapter(adapter);
 //    }
 
-    public void btnKonversi (View view)
+    public void btnConvert (View view)
     {
         String pilihan = spinner.getSelectedItem().toString();
         double suhu = Double.parseDouble(nilai.getText().toString());

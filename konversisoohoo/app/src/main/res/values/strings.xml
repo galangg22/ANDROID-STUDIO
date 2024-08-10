@@ -1,11 +1,14 @@
 <resources>
-    <string name="app_name">konversi soohoo</string>
+    <string name="app_name">Konversi Suhu</string>
     <string-array name="pilihan">
-        <item>celcius to reamur</item>
-        <item>celcius to farenheit</item>
-        <item>celcius to kelvin</item>
-        <item>reamur to celcius</item>
-        <item>reamur to farenheit</item>
-
+        <item>Celsius to Reamur</item>
+        <item>Celsius to Fahrenheit</item>
+        <item>Celsius to Kelvin</item>
+        <item>Reamur to Celsius</item>
+        <item>Reamur to Fahrenheit</item>
+        <item>Reamur to Kelvin</item>
+        <item>Fahrenheit to Celsius</item>
+        <item>Fahrenheit to Reamur</item>
+        <item>Fahrenheit to Kelvin</item>
     </string-array>
 </resources>

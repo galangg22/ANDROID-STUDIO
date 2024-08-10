@@ -11,17 +11,14 @@ import androidx.core.view.WindowInsetsCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.galang.recycleview.R;
-import com.galang.recycleview.Siswa;
-
 import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
     RecyclerView recyclerView;
-    com.galang.recycleview.SiswaAdapter adapter;
-    List<com.galang.recycleview.Siswa> siswaList;
+    SiswaAdapter adapter;
+    List<Siswa> siswaList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,27 +34,45 @@ public class MainActivity extends AppCompatActivity {
         isiData();
     }
 
-    public void load(){
+    public void load()
+    {
         recyclerView = findViewById(R.id.rcvSiswa);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
     }
 
-    public  void isiData(){
-        siswaList = new ArrayList<com.galang.recycleview.Siswa>();
-        siswaList.add(new com.galang.recycleview.Siswa("Namjoon","Ilsan"));
-        siswaList.add(new com.galang.recycleview.Siswa("Seokjin","Anyang"));
-        siswaList.add(new com.galang.recycleview.Siswa("Yoongi","Bukgu"));
-        siswaList.add(new com.galang.recycleview.Siswa("Hoseok","Gwangju"));
-        siswaList.add(new com.galang.recycleview.Siswa("Jimin","Busan"));
-        siswaList.add(new com.galang.recycleview.Siswa("Taehyung","Daegu"));
-        siswaList.add(new com.galang.recycleview.Siswa("Jungkook","Seoul"));
+    public void isiData ()
+    {
+        siswaList = new ArrayList<Siswa>();
+        siswaList.add(new Siswa("Joni", "Surabaya"));
+        siswaList.add(new Siswa("Eko", "Surabaya"));
+        siswaList.add(new Siswa("Tejo", "Surabaya"));
+        siswaList.add(new Siswa("Siti", "Surabaya"));
+        siswaList.add(new Siswa("Joni", "Surabaya"));
+        siswaList.add(new Siswa("Joni", "Surabaya"));
+        siswaList.add(new Siswa("Joni", "Surabaya"));
+        siswaList.add(new Siswa("Joni", "Surabaya"));
+        siswaList.add(new Siswa("Joni", "Surabaya"));
+        siswaList.add(new Siswa("Joni", "Surabaya"));
+        siswaList.add(new Siswa("Joni", "Surabaya"));
+        siswaList.add(new Siswa("Joni", "Surabaya"));
+        siswaList.add(new Siswa("Joni", "Surabaya"));
+        siswaList.add(new Siswa("Joni", "Surabaya"));
+        siswaList.add(new Siswa("Joni", "Surabaya"));
+        siswaList.add(new Siswa("Joni", "Surabaya"));
+        siswaList.add(new Siswa("Joni", "Surabaya"));
+        siswaList.add(new Siswa("Joni", "Surabaya"));
+        siswaList.add(new Siswa("Joni", "Surabaya"));
+        siswaList.add(new Siswa("Joni", "Surabaya"));
 
-        adapter = new com.galang.recycleview.SiswaAdapter(this,siswaList);
+        adapter = new SiswaAdapter(this, siswaList);
         recyclerView.setAdapter(adapter);
+
+
     }
 
-    public void btnTambah(View view) {
-        siswaList.add(new Siswa("Soohyun","Seoul"));
+    public void btnTambah(View view)
+    {
+        siswaList.add(new Siswa("JONI", "JAKARTA"));
         adapter.notifyDataSetChanged();
     }
 }
